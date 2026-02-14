@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Cosmétologie & Soins au Laser Mona Fazaa — Tunis</title>
+    <meta name="description"
+        content="Centre expert en cosmétologie et soins au laser à Tunis. Épilation définitive, traitement des varices, remise en tension cutanée et soins esthétiques avancés.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FAF9F6',
+                        beige: '#F0EBE3',
+                        gold: { DEFAULT: '#C9A96E', dark: '#B8963E', light: '#E8D5B0' },
+                        dark: '#111111',
+                        muted: '#777777',
+                        charcoal: '#1E1E1E',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="bg-cream text-dark font-sans antialiased overflow-x-hidden">
+
+    <!-- ════════════════════════════════════
+         HEADER
+         ════════════════════════════════════ -->
+    <header id="header"
+        class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-xl border-b border-black/[0.04] transition-all duration-500">
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12 flex items-center justify-between h-[72px] lg:h-20">
+            <!-- Logo -->
+            <a href="#hero" class="flex flex-col leading-none group">
+                <span
+                    class="font-serif text-[1.35rem] font-semibold tracking-[-0.02em] text-dark group-hover:text-gold transition-colors duration-300">Mona
+                    Fazaa</span>
+                <span class="text-[0.6rem] uppercase tracking-[4px] text-muted/80 mt-1 font-medium">Cosmétologie &
+                    Laser</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center gap-10">
+                <a href="#about" class="nav-link">À Propos</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
+                <a href="#results" class="nav-link">Résultats</a>
+                <a href="#reviews" class="nav-link">Avis</a>
+                <a href="#contact"
+                    class="ml-6 px-7 py-3 bg-dark text-white text-[0.7rem] uppercase tracking-[2.5px] font-semibold hover:bg-gold hover:text-dark transition-all duration-400 inline-flex items-center gap-2">
+                    Prendre RDV
+                    <i class="fas fa-arrow-right text-[0.6rem]"></i>
+                </a>
+            </nav>
+
+            <!-- Hamburger -->
+            <button id="hamburger" class="lg:hidden flex flex-col gap-[5px] p-2 cursor-pointer group" aria-label="Menu">
+                <span class="bar block w-6 h-[1.5px] bg-dark transition-all duration-300 origin-center"></span>
+                <span class="bar block w-6 h-[1.5px] bg-dark transition-all duration-300 origin-center"></span>
+                <span
+                    class="bar block w-4 h-[1.5px] bg-dark transition-all duration-300 origin-center group-hover:w-6"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="lg:hidden hidden bg-white/98 backdrop-blur-xl">
+            <div class="flex flex-col items-center py-10 gap-5 border-t border-black/5">
+                <a href="#about" class="mobile-nav-link">À Propos</a>
+                <a href="#services" class="mobile-nav-link">Services</a>
+                <a href="#solutions" class="mobile-nav-link">Solutions</a>
+                <a href="#results" class="mobile-nav-link">Résultats</a>
+                <a href="#reviews" class="mobile-nav-link">Avis</a>
+                <a href="#contact"
+                    class="mt-4 px-10 py-3.5 bg-dark text-white text-[0.7rem] uppercase tracking-[2.5px] font-semibold">Prendre
+                    RDV</a>
+                <div class="flex gap-6 mt-6 text-dark/40 text-xl">
+                    <a href="https://www.instagram.com/soins_cosmeto_laser_mona_fazaa" target="_blank"
+                        class="hover:text-gold transition-colors"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/EspaceCosmetologieEtSoinsAuLaserMonaFazaa" target="_blank"
+                        class="hover:text-gold transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/21655590905" target="_blank" class="hover:text-gold transition-colors"><i
+                            class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ════════════════════════════════════
+         HERO
+         ════════════════════════════════════ -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- BG Image -->
+        <div class="absolute inset-0 bg-cover bg-center scale-105"
+            style="background-image: url('assets/images/head.jpg');"></div>
+        <!-- Overlay Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-b from-white/[0.88] via-white/[0.82] to-cream/95"></div>
+        <!-- Decorative Line -->
+        <div class="absolute left-1/2 top-0 w-px h-24 bg-gradient-to-b from-transparent to-gold/40"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 text-center max-w-5xl mx-auto px-6 pt-20">
+            <!-- Eyebrow -->
+            <div class="inline-flex items-center gap-3 mb-8 animate-fade-in">
+                <span class="w-8 h-px bg-gold"></span>
+                <span class="text-[0.7rem] uppercase tracking-[5px] text-gold font-semibold">Berges du Lac 1 —
+                    Tunis</span>
+                <span class="w-8 h-px bg-gold"></span>
+            </div>
+
+            <h1
+                class="font-serif text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[5.5rem] font-normal leading-[1.05] tracking-[-0.02em] mb-8 animate-slide-up">
+                L'Excellence au Service<br>de Votre <span class="italic text-gold">Beauté</span>
+            </h1>
+
+            <p class="text-base md:text-lg text-muted max-w-xl mx-auto mb-14 leading-relaxed font-light animate-slide-up"
+                style="animation-delay: 0.15s;">
+                Plus de 15 ans d'expertise en traitements laser & solutions esthétiques personnalisées.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5 animate-slide-up"
+                style="animation-delay: 0.3s;">
+                <a href="#services"
+                    class="group px-10 py-4 bg-dark text-white text-[0.75rem] uppercase tracking-[3px] font-semibold hover:bg-gold hover:text-dark transition-all duration-400 inline-flex items-center gap-3 shadow-lg shadow-dark/10">
+                    Nos Soins
+                    <i
+                        class="fas fa-arrow-right text-[0.65rem] group-hover:translate-x-1.5 transition-transform duration-300"></i>
+                </a>
+                <a href="https://wa.me/21655590905" target="_blank"
+                    class="px-10 py-4 border-[1.5px] border-dark/20 text-dark text-[0.75rem] uppercase tracking-[3px] font-semibold hover:border-gold hover:text-gold transition-all duration-400 inline-flex items-center gap-3 backdrop-blur-sm">
+                    <i class="fab fa-whatsapp text-base"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce-slow">
+            <span class="text-[0.6rem] uppercase tracking-[3px] text-muted/60">Scroll</span>
+            <div class="w-px h-8 bg-gradient-to-b from-dark/30 to-transparent"></div>
+        </div>
+    </section>
+
+    <!-- ═══ Gold Divider ═══ -->
+    <div class="w-full flex justify-center py-0">
+        <div class="w-20 h-px bg-gold/40"></div>
+    </div>
+
+    <!-- ════════════════════════════════════
+         ABOUT
+         ════════════════════════════════════ -->
+    <section id="about" class="py-28 lg:py-40 bg-cream scroll-reveal">
+        <div class="max-w-[1300px] mx-auto px-6 lg:px-12">
+            <div class="grid lg:grid-cols-[1fr_1.1fr] gap-16 lg:gap-28 items-center">
+                <!-- Text -->
+                <div>
+                    <div class="inline-flex items-center gap-3 mb-6">
+                        <span class="w-8 h-px bg-gold"></span>
+                        <span class="text-[0.7rem] uppercase tracking-[4px] text-gold font-semibold">Notre Centre</span>
+                    </div>
+                    <h2 class="font-serif text-3xl lg:text-[3.2rem] font-normal mb-8 leading-[1.15] tracking-[-0.01em]">
+                        Un espace dédié<br>à votre <span class="italic">bien-être</span></h2>
+                    <p class="text-[1.05rem] text-muted/90 leading-[1.9] mb-6 font-light">
+                        Centre professionnel de cosmétologie et soins au laser situé aux Berges du Lac 1 à Tunis, notre
+                        espace allie expertise clinique et technologie de pointe.
+                    </p>
+                    <p class="text-muted/80 leading-[1.9] mb-10 font-light">
+                        Équipés de la technologie <strong class="text-dark font-semibold">CANDELA GENTLE YAG</strong>,
+                        référence mondiale en dermatologie esthétique, nous garantissons des résultats sûrs, visibles et
+                        durables.
+                    </p>
+
+                    <a href="#services"
+                        class="inline-flex items-center gap-3 text-[0.75rem] uppercase tracking-[2.5px] font-semibold text-dark hover:text-gold transition-colors duration-300 group">
+                        Découvrir nos services
+                        <span
+                            class="w-6 h-px bg-dark group-hover:bg-gold group-hover:w-10 transition-all duration-300"></span>
+                    </a>
+                </div>
+                <!-- Image -->
+                <div class="relative">
+                    <div class="relative overflow-hidden rounded-3xl shadow-2xl shadow-dark/10">
+                        <img src="assets/images/fotona.jpg" alt="Soin Laser Fotona"
+                            class="w-full h-[520px] lg:h-[600px] object-cover hover:scale-[1.03] transition-transform duration-[1.2s]">
+                    </div>
+                    <!-- Decorative frame -->
+                    <div
+                        class="absolute -bottom-5 -left-5 w-full h-full border border-gold/20 rounded-3xl -z-10 hidden lg:block">
+                    </div>
+                    <!-- Floating stat badge -->
+                    <div
+                        class="absolute -bottom-6 -right-4 lg:right-8 bg-white rounded-2xl shadow-xl shadow-dark/8 p-6 hidden md:block">
+                        <div class="text-center">
+                            <span class="font-serif text-4xl text-gold block">15+</span>
+                            <span class="text-[0.65rem] uppercase tracking-[2px] text-muted mt-1 block">Ans
+                                d'expertise</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Stats Banner ═══ -->
+    <div class="bg-dark py-16 lg:py-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
+            <div class="text-center">
+                <span class="font-serif text-4xl lg:text-5xl text-gold block mb-2">15+</span>
+                <span class="text-[0.7rem] uppercase tracking-[3px] text-white/50 font-medium">Ans d'expérience</span>
+            </div>
+            <div class="text-center">
+                <span class="font-serif text-4xl lg:text-5xl text-gold block mb-2">4.4</span>
+                <span class="text-[0.7rem] uppercase tracking-[3px] text-white/50 font-medium">Note Google ★</span>
+            </div>
+            <div class="text-center">
+                <span class="font-serif text-4xl lg:text-5xl text-gold block mb-2">3000+</span>
+                <span class="text-[0.7rem] uppercase tracking-[3px] text-white/50 font-medium">Clients satisfaits</span>
+            </div>
+            <div class="text-center">
+                <span class="font-serif text-4xl lg:text-5xl text-gold block mb-2">100%</span>
+                <span class="text-[0.7rem] uppercase tracking-[3px] text-white/50 font-medium">Sur mesure</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ════════════════════════════════════
+         SERVICES — Editorial Layout
+         ════════════════════════════════════ -->
+    <section id="services" class="py-28 lg:py-40 bg-cream scroll-reveal">
+        <div class="max-w-[1300px] mx-auto px-6 lg:px-12">
+            <div class="text-center mb-24">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="w-8 h-px bg-gold"></span>
+                    <span class="text-[0.7rem] uppercase tracking-[4px] text-gold font-semibold">Expertise</span>
+                    <span class="w-8 h-px bg-gold"></span>
+                </div>
+                <h2 class="font-serif text-3xl lg:text-[3.2rem] font-normal tracking-[-0.01em]">Nos Services</h2>
+            </div>
+
+            <!-- Service 1 — Image Left -->
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-28 lg:mb-40">
+                <div class="overflow-hidden rounded-3xl">
+                    <img src="assets/images/epilation.jpg" alt="Épilation Définitive Laser"
+                        class="w-full h-[400px] lg:h-[520px] object-cover hover:scale-[1.03] transition-transform duration-[1.2s]">
+                </div>
+                <div class="lg:pl-6">
+                    <span class="font-serif text-8xl text-dark/[0.04] block -mb-10 ml-[-4px]">01</span>
+                    <h3 class="font-serif text-2xl lg:text-[2.2rem] mb-5 leading-tight">Épilation Définitive<br>au <span
+                            class="italic">Laser</span></h3>
+                    <p class="text-muted leading-[1.9] mb-8 font-light max-w-md">
+                        Traitement efficace, rapide et sécurisé grâce à la technologie CANDELA GENTLE YAG — la référence
+                        mondiale. Adapté à tous les types de peau et phototypes, pour des résultats permanents.
+                    </p>
+                    <a href="#contact"
+                        class="inline-flex items-center gap-3 text-[0.75rem] uppercase tracking-[2.5px] font-semibold text-dark hover:text-gold transition-colors duration-300 group">
+                        Prendre rendez-vous
+                        <span
+                            class="w-6 h-px bg-dark group-hover:bg-gold group-hover:w-10 transition-all duration-300"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 2 — Image Right -->
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-28 lg:mb-40">
+                <div class="lg:order-2 overflow-hidden rounded-3xl">
+                    <img src="assets/images/traitement.png" alt="Traitement Varices"
+                        class="w-full h-[400px] lg:h-[520px] object-cover hover:scale-[1.03] transition-transform duration-[1.2s]">
+                </div>
+                <div class="lg:order-1 lg:pr-6">
+                    <span class="font-serif text-8xl text-dark/[0.04] block -mb-10 ml-[-4px]">02</span>
+                    <h3 class="font-serif text-2xl lg:text-[2.2rem] mb-5 leading-tight">Traitement des<br><span
+                            class="italic">Varices</span></h3>
+                    <p class="text-muted leading-[1.9] mb-8 font-light max-w-md">
+                        Solution laser ciblée pour réduire efficacement l'apparence des varicosités et améliorer
+                        l'aspect esthétique des jambes. Résultats progressifs et durables.
+                    </p>
+                    <a href="#contact"
+                        class="inline-flex items-center gap-3 text-[0.75rem] uppercase tracking-[2.5px] font-semibold text-dark hover:text-gold transition-colors duration-300 group">
+                        Prendre rendez-vous
+                        <span
+                            class="w-6 h-px bg-dark group-hover:bg-gold group-hover:w-10 transition-all duration-300"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 3 — Image Left -->
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="overflow-hidden rounded-3xl">
+                    <img src="assets/images/visage_complet.png" alt="Remise en Tension Cutanée"
+                        class="w-full h-[400px] lg:h-[520px] object-cover hover:scale-[1.03] transition-transform duration-[1.2s]">
+                </div>
+                <div class="lg:pl-6">
+                    <span class="font-serif text-8xl text-dark/[0.04] block -mb-10 ml-[-4px]">03</span>
+                    <h3 class="font-serif text-2xl lg:text-[2.2rem] mb-5 leading-tight">Remise en Tension<br><span
+                            class="italic">Cutanée</span></h3>
+                    <p class="text-muted leading-[1.9] mb-8 font-light max-w-md">
+                        Traitement du relâchement cutané du visage et du corps. Idéal pour le raffermissement, la
+                        réduction de la cellulite et la restauration de l'éclat naturel de votre peau.
+                    </p>
+                    <a href="#contact"
+                        class="inline-flex items-center gap-3 text-[0.75rem] uppercase tracking-[2.5px] font-semibold text-dark hover:text-gold transition-colors duration-300 group">
+                        Prendre rendez-vous
+                        <span
+                            class="w-6 h-px bg-dark group-hover:bg-gold group-hover:w-10 transition-all duration-300"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         SOLUTIONS
+         ════════════════════════════════════ -->
+    <section id="solutions" class="py-28 lg:py-40 bg-beige relative overflow-hidden scroll-reveal">
+        <div
+            class="absolute top-0 right-0 w-[700px] h-[700px] bg-gold/[0.04] rounded-full blur-[120px] -translate-y-1/3 translate-x-1/4 pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gold/[0.03] rounded-full blur-[80px] translate-y-1/3 -translate-x-1/4 pointer-events-none">
+        </div>
+
+        <div class="max-w-[1300px] mx-auto px-6 lg:px-12 relative z-10">
+            <div class="text-center mb-20">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="w-8 h-px bg-gold"></span>
+                    <span class="text-[0.7rem] uppercase tracking-[4px] text-gold font-semibold">Traitements</span>
+                    <span class="w-8 h-px bg-gold"></span>
+                </div>
+                <h2 class="font-serif text-3xl lg:text-[3.2rem] font-normal mb-4 tracking-[-0.01em]">Solutions
+                    Personnalisées</h2>
+                <p class="text-muted max-w-md mx-auto font-light">Protocoles progressifs adaptés à chaque type de peau.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class="solution-card group">
+                    <span class="solution-number">01</span>
+                    <div class="mt-auto relative z-10">
+                        <h4 class="font-serif text-xl lg:text-2xl mb-2">Acné & Cicatrices</h4>
+                    </div>
+                </div>
+                <div class="solution-card group">
+                    <span class="solution-number">02</span>
+                    <div class="mt-auto relative z-10">
+                        <h4 class="font-serif text-xl lg:text-2xl mb-2">Taches Brunes</h4>
+                    </div>
+                </div>
+                <div class="solution-card group">
+                    <span class="solution-number">03</span>
+                    <div class="mt-auto relative z-10">
+                        <h4 class="font-serif text-xl lg:text-2xl mb-2">Rides & Ridules</h4>
+                    </div>
+                </div>
+                <div class="solution-card group">
+                    <span class="solution-number">04</span>
+                    <div class="mt-auto relative z-10">
+                        <h4 class="font-serif text-xl lg:text-2xl mb-2">Raffermissement</h4>
+                    </div>
+                </div>
+                <div class="solution-card group">
+                    <span class="solution-number">05</span>
+                    <div class="mt-auto relative z-10">
+                        <h4 class="font-serif text-xl lg:text-2xl mb-2">Vergetures</h4>
+                    </div>
+                </div>
+                <div class="solution-card group">
+                    <span class="solution-number">06</span>
+                    <div class="mt-auto relative z-10">
+                        <h4 class="font-serif text-xl lg:text-2xl mb-2">Rajeunissement</h4>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center text-[0.7rem] uppercase tracking-[3px] text-muted/60 mt-16">
+                Chaque traitement est étudié au cas par cas après diagnostic professionnel.
+            </p>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         RESULTS
+         ════════════════════════════════════ -->
+    <section id="results" class="py-28 lg:py-40 bg-cream overflow-hidden scroll-reveal">
+        <div class="max-w-[1300px] mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="w-8 h-px bg-gold"></span>
+                    <span class="text-[0.7rem] uppercase tracking-[4px] text-gold font-semibold">Avant / Après</span>
+                    <span class="w-8 h-px bg-gold"></span>
+                </div>
+                <h2 class="font-serif text-3xl lg:text-[3.2rem] font-normal mb-4 tracking-[-0.01em]">Nos Résultats</h2>
+                <p class="text-muted max-w-md mx-auto font-light">Découvrez la transformation — résultats réels de nos
+                    patients.</p>
+            </div>
+        </div>
+
+        <div class="relative max-w-[1500px] mx-auto">
+            <!-- Nav Buttons -->
+            <button id="prevBtn"
+                class="hidden lg:flex absolute left-6 top-1/2 -translate-y-1/2 z-20 w-14 h-14 bg-white/90 backdrop-blur-sm rounded-full shadow-xl items-center justify-center text-dark hover:bg-dark hover:text-white transition-all duration-300">
+                <i class="fas fa-arrow-left text-sm"></i>
+            </button>
+            <button id="nextBtn"
+                class="hidden lg:flex absolute right-6 top-1/2 -translate-y-1/2 z-20 w-14 h-14 bg-white/90 backdrop-blur-sm rounded-full shadow-xl items-center justify-center text-dark hover:bg-dark hover:text-white transition-all duration-300">
+                <i class="fas fa-arrow-right text-sm"></i>
+            </button>
+
+            <div id="resultsCarousel"
+                class="results-carousel flex gap-4 lg:gap-5 overflow-x-auto pb-4 px-6 snap-x snap-mandatory">
+                <div class="result-item snap-center"><img src="assets/images/1.jpg" alt="Résultat 1"></div>
+                <div class="result-item snap-center"><img src="assets/images/2.jpg" alt="Résultat 2"></div>
+                <div class="result-item snap-center"><img src="assets/images/3.jpg" alt="Résultat 3"></div>
+                <div class="result-item snap-center"><img src="assets/images/4.jpg" alt="Résultat 4"></div>
+                <div class="result-item snap-center"><img src="assets/images/5.jpg" alt="Résultat 5"></div>
+                <div class="result-item snap-center"><img src="assets/images/6.jpg" alt="Résultat 6"></div>
+                <div class="result-item snap-center"><img src="assets/images/7.jpg" alt="Résultat 7"></div>
+                <div class="result-item snap-center"><img src="assets/images/8.jpg" alt="Résultat 8"></div>
+                <div class="result-item snap-center"><img src="assets/images/9.jpg" alt="Résultat 9"></div>
+                <div class="result-item snap-center"><img src="assets/images/10.jpg" alt="Résultat 10"></div>
+                <div class="result-item snap-center"><img src="assets/images/11.jpg" alt="Résultat 11"></div>
+                <div class="result-item snap-center"><img src="assets/images/12.jpg" alt="Résultat 12"></div>
+                <div class="result-item snap-center"><img src="assets/images/13.jpg" alt="Résultat 13"></div>
+            </div>
+
+            <p class="lg:hidden text-center text-[0.7rem] uppercase tracking-[2px] text-muted/50 mt-6">
+                <i class="fas fa-hand-pointer mr-1"></i> Glissez pour voir plus
+            </p>
+        </div>
+    </section>
+
+    <!-- ═══ CTA Banner ═══ -->
+    <div class="bg-dark py-20 lg:py-24 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(201,169,110,0.08),transparent_60%)]">
+        </div>
+        <div class="relative z-10 max-w-3xl mx-auto px-6">
+            <h3 class="font-serif text-2xl lg:text-4xl text-white mb-6 font-normal">Prêt à transformer <span
+                    class="italic text-gold">votre peau</span> ?</h3>
+            <p class="text-white/50 mb-10 font-light">Réservez une consultation personnalisée et commencez votre
+                parcours beauté.</p>
+            <a href="https://wa.me/21655590905" target="_blank"
+                class="inline-flex items-center gap-3 px-10 py-4 bg-gold text-dark text-[0.75rem] uppercase tracking-[2.5px] font-bold hover:bg-gold-light transition-all duration-300 shadow-lg shadow-gold/20">
+                <i class="fab fa-whatsapp text-lg"></i> Réserver sur WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- ════════════════════════════════════
+         REVIEWS
+         ════════════════════════════════════ -->
+    <section id="reviews" class="py-28 lg:py-40 bg-beige scroll-reveal">
+        <div class="max-w-4xl mx-auto px-6 lg:px-12 text-center">
+            <div class="inline-flex items-center gap-3 mb-6">
+                <span class="w-8 h-px bg-gold"></span>
+                <span class="text-[0.7rem] uppercase tracking-[4px] text-gold font-semibold">Témoignages</span>
+                <span class="w-8 h-px bg-gold"></span>
+            </div>
+            <h2 class="font-serif text-3xl lg:text-[3.2rem] font-normal mb-20 tracking-[-0.01em]">Ce que disent<br>nos
+                <span class="italic">patients</span>
+            </h2>
+
+            <!-- Review Container -->
+            <div class="relative">
+                <!-- Big Quotation Mark -->
+                <div
+                    class="font-serif text-[8rem] lg:text-[12rem] text-gold/[0.07] absolute -top-16 left-1/2 -translate-x-1/2 leading-none select-none pointer-events-none">
+                    "</div>
+
+                <div class="relative min-h-[220px] lg:min-h-[200px]">
+                    <div class="review-card active">
+                        <div class="text-gold text-lg mb-8 tracking-[6px]">★ ★ ★ ★ ★</div>
+                        <p
+                            class="font-serif text-lg lg:text-[1.4rem] italic text-dark/75 leading-[1.8] mb-10 max-w-2xl mx-auto">
+                            "Impeccable de A à Z. Rdv ponctuelle, travail serieux, Mona a beaucoup de connaissance et de
+                            supers conseils pour une peau geniale. A chaque retour en Tunisie, je fais mon soins du
+                            visage chez elle et je suis tjs trés satisfaite. Merci!!"
+                        </p>
+                        <div class="w-10 h-px bg-gold/40 mx-auto mb-4"></div>
+                        <p class="text-[0.75rem] uppercase tracking-[3px] font-semibold text-dark/60">Sara James</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="text-gold text-lg mb-8 tracking-[6px]">★ ★ ★ ★ ★</div>
+                        <p
+                            class="font-serif text-lg lg:text-[1.4rem] italic text-dark/75 leading-[1.8] mb-10 max-w-2xl mx-auto">
+                            "Centre impeccable avec conseils experts. Une prise en charge sérieuse et un suivi de
+                            qualité."
+                        </p>
+                        <div class="w-10 h-px bg-gold/40 mx-auto mb-4"></div>
+                        <p class="text-[0.75rem] uppercase tracking-[3px] font-semibold text-dark/60">Mariem B.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="text-gold text-lg mb-8 tracking-[6px]">★ ★ ★ ★ ★</div>
+                        <p
+                            class="font-serif text-lg lg:text-[1.4rem] italic text-dark/75 leading-[1.8] mb-10 max-w-2xl mx-auto">
+                            "Très satisfaite de la prise en charge dans ce centre, j'y suis allée pour des séances
+                            d'épilation définitive, tout a été organisé et plannifié selon mes engagements, les
+                            résultats sont impeccables..."
+                        </p>
+                        <div class="w-10 h-px bg-gold/40 mx-auto mb-4"></div>
+                        <p class="text-[0.75rem] uppercase tracking-[3px] font-semibold text-dark/60">Sophie Dziri</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="text-gold text-lg mb-8 tracking-[6px]">★ ★ ★ ★ ★</div>
+                        <p
+                            class="font-serif text-lg lg:text-[1.4rem] italic text-dark/75 leading-[1.8] mb-10 max-w-2xl mx-auto">
+                            "Professionnalisme et bienveillance"
+                        </p>
+                        <div class="w-10 h-px bg-gold/40 mx-auto mb-4"></div>
+                        <p class="text-[0.75rem] uppercase tracking-[3px] font-semibold text-dark/60">Vanessa Ridane</p>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <div class="flex items-center justify-center gap-5 mt-12">
+                    <button id="prevReview"
+                        class="w-12 h-12 rounded-full border border-dark/10 flex items-center justify-center hover:bg-dark hover:text-white hover:border-dark transition-all duration-300 text-dark/40">
+                        <i class="fas fa-arrow-left text-xs"></i>
+                    </button>
+                    <button id="nextReview"
+                        class="w-12 h-12 rounded-full border border-dark/10 flex items-center justify-center hover:bg-dark hover:text-white hover:border-dark transition-all duration-300 text-dark/40">
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         CONTACT
+         ════════════════════════════════════ -->
+    <section id="contact" class="py-28 lg:py-40 bg-cream scroll-reveal">
+        <div class="max-w-[1300px] mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="w-8 h-px bg-gold"></span>
+                    <span class="text-[0.7rem] uppercase tracking-[4px] text-gold font-semibold">Rendez-vous</span>
+                    <span class="w-8 h-px bg-gold"></span>
+                </div>
+                <h2 class="font-serif text-3xl lg:text-[3.2rem] font-normal tracking-[-0.01em]">Contactez-nous</h2>
+            </div>
+
+            <div
+                class="grid lg:grid-cols-[1fr_1.2fr] gap-0 bg-white rounded-3xl overflow-hidden shadow-2xl shadow-dark/[0.06]">
+                <!-- Info -->
+                <div class="p-10 lg:p-14 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-serif text-2xl mb-8">Prenez <span class="italic">rendez-vous</span></h3>
+                        <div class="space-y-7">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-11 h-11 rounded-full bg-cream flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fas fa-map-marker-alt text-gold text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-sm mb-0.5">Adresse</h4>
+                                    <p class="text-muted text-[0.85rem] font-light">Résidence Lac 2001, Rue du Lac
+                                        Léman, Berges du Lac 1, Tunis</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-11 h-11 rounded-full bg-cream flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fas fa-phone-alt text-gold text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-sm mb-0.5">Téléphone</h4>
+                                    <p class="text-muted text-[0.85rem] font-light"><a href="tel:+21652590052"
+                                            class="hover:text-gold transition-colors">+216 52 59 00 52</a></p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-11 h-11 rounded-full bg-cream flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fab fa-whatsapp text-gold text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-sm mb-0.5">WhatsApp</h4>
+                                    <p class="text-muted text-[0.85rem] font-light"><a href="https://wa.me/21655590905"
+                                            target="_blank" class="hover:text-gold transition-colors">+216 55 59 09
+                                            05</a></p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-11 h-11 rounded-full bg-cream flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fas fa-envelope text-gold text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-sm mb-0.5">Email</h4>
+                                    <p class="text-muted text-[0.85rem] font-light"><a
+                                            href="mailto:espacecosmetologie@gmail.com"
+                                            class="hover:text-gold transition-colors">espacecosmetologie@gmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-11 h-11 rounded-full bg-cream flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fas fa-clock text-gold text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-sm mb-0.5">Horaires</h4>
+                                    <p class="text-muted text-[0.85rem] font-light">Sur rendez-vous — Jusqu'à 19h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 mt-10 pt-8 border-t border-black/5">
+                        <a href="https://www.instagram.com/soins_cosmeto_laser_mona_fazaa" target="_blank"
+                            class="w-10 h-10 rounded-full border border-dark/10 flex items-center justify-center text-dark/30 hover:text-gold hover:border-gold transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/EspaceCosmetologieEtSoinsAuLaserMonaFazaa" target="_blank"
+                            class="w-10 h-10 rounded-full border border-dark/10 flex items-center justify-center text-dark/30 hover:text-gold hover:border-gold transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Map -->
+                <div class="min-h-[400px] lg:min-h-0 bg-dark/5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.651543883088!2d10.2335!3d36.8355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDUwJzA3LjgiTiAxMMKwMTQnMDAuNiJF!5e0!3m2!1sen!2stn!4v1620000000000!5m2!1sen!2stn"
+                        width="100%" height="100%" style="border:0; filter: grayscale(80%) contrast(1.1);"
+                        allowfullscreen="" loading="lazy" class="w-full h-full min-h-[400px]"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         FOOTER
+         ════════════════════════════════════ -->
+    <footer class="bg-charcoal text-white/60 pt-24 pb-8">
+        <div class="max-w-[1300px] mx-auto px-6 lg:px-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-14 lg:gap-10 pb-20 border-b border-white/[0.06]">
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <h3 class="font-serif text-[1.6rem] text-white mb-1 tracking-[-0.02em]">Mona Fazaa</h3>
+                    <p class="text-[0.65rem] uppercase tracking-[4px] text-gold/80 mb-6">Cosmétologie & Laser</p>
+                    <p class="text-sm leading-[1.9] mb-8 max-w-[280px] font-light">L'excellence de la médecine
+                        esthétique alliée à des technologies de pointe.</p>
+                    <div class="flex gap-3">
+                        <a href="https://www.instagram.com/soins_cosmeto_laser_mona_fazaa" target="_blank"
+                            class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition-all duration-300 text-white/40">
+                            <i class="fab fa-instagram text-xs"></i>
+                        </a>
+                        <a href="https://www.facebook.com/EspaceCosmetologieEtSoinsAuLaserMonaFazaa" target="_blank"
+                            class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition-all duration-300 text-white/40">
+                            <i class="fab fa-facebook-f text-xs"></i>
+                        </a>
+                        <a href="https://wa.me/21655590905" target="_blank"
+                            class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition-all duration-300 text-white/40">
+                            <i class="fab fa-whatsapp text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Nav -->
+                <div>
+                    <h4 class="text-[0.7rem] uppercase tracking-[3px] text-white/90 font-semibold mb-7">Navigation</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#hero"
+                                class="text-sm font-light hover:text-gold transition-colors duration-300">Accueil</a>
+                        </li>
+                        <li><a href="#about"
+                                class="text-sm font-light hover:text-gold transition-colors duration-300">Le Centre</a>
+                        </li>
+                        <li><a href="#results"
+                                class="text-sm font-light hover:text-gold transition-colors duration-300">Résultats</a>
+                        </li>
+                        <li><a href="#reviews"
+                                class="text-sm font-light hover:text-gold transition-colors duration-300">Témoignages</a>
+                        </li>
+                        <li><a href="#contact"
+                                class="text-sm font-light hover:text-gold transition-colors duration-300">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Treatments -->
+                <div>
+                    <h4 class="text-[0.7rem] uppercase tracking-[3px] text-white/90 font-semibold mb-7">Nos Soins</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services"
+                                class="text-sm font-light hover:text-gold transition-colors duration-300">Épilation
+                                Laser</a></li>
+                        <li><a href="#services"
+                                class="text-sm font-light hover:text-gold transition-colors duration-300">Traitement
+                                Varices</a></li>
+                        <li><a href="#solutions"
+                                class="text-sm font-light hover:text-gold transition-colors duration-300">Soins du
+                                Visage</a></li>
+                        <li><a href="#solutions"
+                                class="text-sm font-light hover:text-gold transition-colors duration-300">Remise en
+                                Tension</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-[0.7rem] uppercase tracking-[3px] text-white/90 font-semibold mb-7">Contact</h4>
+                    <ul class="space-y-4 text-sm font-light">
+                        <li class="flex items-start gap-3"><i
+                                class="fas fa-map-marker-alt text-gold/60 mt-1 text-xs"></i> Berges du Lac 1, Tunis</li>
+                        <li class="flex items-start gap-3"><i class="fas fa-phone text-gold/60 mt-1 text-xs"></i> +216
+                            55 590 905</li>
+                        <li class="flex items-start gap-3"><i class="fas fa-envelope text-gold/60 mt-1 text-xs"></i>
+                            espacecosmetologie@gmail.com</li>
+                        <li class="flex items-start gap-3"><i class="fas fa-clock text-gold/60 mt-1 text-xs"></i> Sur
+                            rendez-vous</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="pt-8 text-center">
+                <p class="text-[0.65rem] uppercase tracking-[3px] text-white/20">&copy; 2026 Espace Mona Fazaa — Tous
+                    droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ════════════════════════════════════
+         FLOATING ELEMENTS
+         ════════════════════════════════════ -->
+    <a href="https://wa.me/21655590905" target="_blank"
+        class="fixed bottom-6 right-6 w-[56px] h-[56px] bg-[#25d366] text-white rounded-full flex items-center justify-center text-2xl shadow-xl shadow-[#25d366]/20 hover:scale-110 transition-transform duration-300 z-[9999]">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="#hero" id="scrollTop"
+        class="fixed bottom-[100px] right-7 w-11 h-11 bg-white/90 backdrop-blur-sm text-dark border border-dark/[0.06] rounded-full flex items-center justify-center text-xs shadow-lg hover:bg-dark hover:text-white hover:border-dark transition-all duration-300 z-[9998] opacity-0 invisible pointer-events-none"
+        aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

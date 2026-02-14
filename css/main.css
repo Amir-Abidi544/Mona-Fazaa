@@ -1,0 +1,298 @@
+/* ================================================
+   Espace Mona Fazaa — Custom Styles
+   Complements Tailwind CDN — plain CSS only
+   ================================================ */
+
+/* ── Animations ── */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceSlow {
+
+    0%,
+    100% {
+        transform: translateY(0) translateX(-50%);
+    }
+
+    50% {
+        transform: translateY(-8px) translateX(-50%);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out both;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.8s ease-out both;
+}
+
+.animate-bounce-slow {
+    animation: bounceSlow 2.5s ease-in-out infinite;
+}
+
+/* ── Scroll Reveal ── */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ── Nav Links ── */
+.nav-link {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    color: rgba(17, 17, 17, 0.55);
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #C9A96E;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #111111;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.mobile-nav-link {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 500;
+    color: rgba(17, 17, 17, 0.45);
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.mobile-nav-link:hover {
+    color: #111111;
+}
+
+/* ── Hamburger Animation ── */
+#hamburger.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+#hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+    transform: translateX(10px);
+}
+
+#hamburger.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+    width: 24px;
+}
+
+/* ── Solution Cards ── */
+.solution-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 44px;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+}
+
+.solution-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #C9A96E, #E8D5B0);
+    transition: width 0.5s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(201, 169, 110, 0.2);
+}
+
+.solution-card:hover::after {
+    width: 100%;
+}
+
+.solution-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    color: rgba(17, 17, 17, 0.03);
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    font-style: italic;
+    line-height: 1;
+    transition: all 0.5s ease;
+}
+
+@media (min-width: 1024px) {
+    .solution-number {
+        font-size: 5.5rem;
+    }
+}
+
+.solution-card:hover .solution-number {
+    color: rgba(201, 169, 110, 0.15);
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.solution-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #C9A96E;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: all 0.4s ease;
+}
+
+.solution-card:hover .solution-link {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .solution-link {
+        opacity: 1;
+        transform: translateY(0);
+        margin-top: 6px;
+    }
+
+    .solution-card {
+        padding: 32px;
+        min-height: 200px;
+    }
+}
+
+/* ── Results Carousel ── */
+.results-carousel {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.results-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.result-item {
+    flex-shrink: 0;
+    width: 270px;
+    height: 370px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+@media (min-width: 640px) {
+    .result-item {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .result-item {
+        width: 320px;
+        height: 420px;
+    }
+}
+
+.result-item:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+}
+
+.result-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ── Review Cards ── */
+.review-card {
+    display: none;
+    animation: reviewFadeIn 0.6s ease-out;
+}
+
+.review-card.active {
+    display: block;
+}
+
+@keyframes reviewFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* ── Scroll Top ── */
+#scrollTop.visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+/* ── Selection ── */
+::selection {
+    background-color: rgba(201, 169, 110, 0.2);
+    color: #111111;
+}

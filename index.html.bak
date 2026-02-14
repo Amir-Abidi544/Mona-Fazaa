@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Cosmétologie & Soins au Laser Mona Fazaa - Tunis</title>
+    <meta name="description"
+        content="Centre expert en cosmétologie et soins au laser à Tunis. Épilation définitive, traitement des varices, remise en tension cutanée et soins esthétiques avancés.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                Mona Fazaa
+                <span class="logo-sub">Espace Cosmétologie & Laser</span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Accueil</a></li>
+                    <li><a href="#about" class="nav-link">À Propos</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#solutions" class="nav-link">Solutions</a></li>
+                    <li><a href="#reviews" class="nav-link">Avis</a></li>
+                    <li><a href="#contact" class="nav-link btn-contact">Contact</a></li>
+                </ul>
+                <div class="nav-socials mobile-only">
+                    <a href="https://www.instagram.com/soins_cosmeto_laser_mona_fazaa" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/EspaceCosmetologieEtSoinsAuLaserMonaFazaa" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/21655590905" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Experts en Laser & Soins Esthétiques Avancés à Tunis</h1>
+            <p class="hero-subtitle">Plus de 15 ans d’expertise en traitements laser et solutions personnalisées pour la
+                peau.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Découvrir nos soins</a>
+                <a href="https://wa.me/21655590905" class="btn btn-outline" target="_blank"><i
+                        class="fab fa-whatsapp"></i> Contact WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2 class="section-title">À propos du centre</h2>
+                <p class="lead">Centre professionnel de cosmétologie et soins au laser situé aux Berges du Lac 1 à
+                    Tunis.</p>
+                <p>Spécialisé dans les traitements laser avancés et les protocoles progressifs personnalisés, notre
+                    espace est dédié à votre beauté et votre bien-être. Nous sommes équipés de la technologie haut de
+                    gamme <strong>CANDELA GENTLE YAG</strong>, référence mondiale en dermatologie esthétique, pour
+                    garantir des résultats sûrs et durables.</p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <i class="fas fa-certificate"></i>
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Années d'expérience</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-star"></i>
+                        <span class="stat-number">4.4/5</span>
+                        <span class="stat-label">Note Google</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <!-- Placeholder for clinic interior -->
+                <img src="assets/images/fotona.jpg" alt="Soin Laser Fotona"
+                    style="border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <h2 class="section-title text-center">Nos Services</h2>
+            <p class="section-subtitle text-center">Des technologies de pointe pour des résultats visibles.</p>
+
+            <div class="services-list">
+                <!-- Service 1: Épilation -->
+                <div class="service-row">
+                    <div class="service-image">
+                        <img src="assets/images/epilation.jpg" alt="Épilation Définitive Laser">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-gem"></i></div>
+                        <h3>Épilation Définitive au Laser</h3>
+                        <p>Traitement efficace et sécurisé grâce à la technologie CANDELA GENTLE YAG. Adapté à tous les
+                            types de peau pour des résultats durables avec un protocole personnalisé.</p>
+                        <a href="#contact" class="btn-text">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 2: Varices -->
+                <div class="service-row reverse">
+                    <div class="service-image">
+                        <img src="assets/images/traitement.png" alt="Traitement Varices">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>Traitement des Varices</h3>
+                        <p>Solution laser ciblée permettant de réduire l’apparence des varicosités et améliorer l’aspect
+                            esthétique des jambes. Procédure médicale de haute précision.</p>
+                        <a href="#contact" class="btn-text">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Remise en Tension / Visage -->
+                <div class="service-row">
+                    <div class="service-image">
+                        <img src="assets/images/visage_complet.png" alt="Remise en Tension Cutanée">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-spa"></i></div>
+                        <h3>Remise en Tension Cutanée</h3>
+                        <p>Traitement du relâchement cutané du visage et du corps. Idéal pour le raffermissement,
+                            l'amélioration de la fermeté et la réduction de la cellulite.</p>
+                        <a href="#contact" class="btn-text">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="section solutions" id="solutions">
+        <div class="container">
+            <div class="solutions-content text-center">
+                <h2 class="section-title white">Solutions Personnalisées</h2>
+                <p class="white mb-5">Nous utilisons la technique des préparations progressives, avec des protocoles
+                    personnalisés adaptés à chaque type de peau.</p>
+
+                <div class="solutions-grid">
+                    <div class="solution-item">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Acné & Cicatrices</h4>
+                    </div>
+                    <div class="solution-item">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Taches brunes</h4>
+                    </div>
+                    <div class="solution-item">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Rides et ridules</h4>
+                    </div>
+                    <div class="solution-item">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Raffermissement</h4>
+                    </div>
+                    <div class="solution-item">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Vergetures</h4>
+                    </div>
+                    <div class="solution-item">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Rajeunissement</h4>
+                    </div>
+                </div>
+
+                <p class="white mt-5 note">Chaque traitement est étudié au cas par cas après diagnostic
+                    professionnel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section why-us">
+        <div class="container">
+            <h2 class="section-title text-center">Pourquoi Nous Choisir</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-user-md"></i>
+                    <h4>Expertise Reconnue</h4>
+                    <p>+15 ans d’expérience professionnelle.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-microscope"></i>
+                    <h4>Technologie Avancée</h4>
+                    <p>Équipement CANDELA GENTLE YAG.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h4>Diagnostic Sur Mesure</h4>
+                    <p>Protocoles 100% personnalisés.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Emplacement Premium</h4>
+                    <p>Berges du Lac 1, Tunis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Reviews Section -->
+    <section class="section reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title text-center">Avis Clients</h2>
+            <div class="review-carousel">
+                <div class="review-card active">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Impeccable de A à Z. Rdv ponctuelle, travail serieux, Mona a beaucoup de
+                        connaissance et de supers conseils pour une peau geniale. A chaque retour en Tunisie, je fais
+                        mon soins du visage chez elle et je suis tjs trés satisfaite. Merci!!"</p>
+                    <p class="review-author">- Sara James</p>
+                </div>
+                <!-- More reviews can be added via JS or static here for now we keep one detailed -->
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Centre impeccable avec conseils experts. Une prise en charge sérieuse et un
+                        suivi de qualité."</p>
+                    <p class="review-author">- Mariem B.</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Très satisfaite de la prise en charge dans ce centre, j'y suis allée pour
+                        des séances d'épilation définitive, tout a été organisé et plannifié selon mes engagements, j'ai
+                        eu toutes les explications dont j'avais besoin, la personne est aux petits soins et prend son
+                        temps et les résultats sont impeccables... Avec un recul de 4 ans je viens de refaire une séance
+                        d'entretien ce jour. "</p>
+                    <p class="review-author">- Sophie Dziri</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Professionnalisme et bienveillance"</p>
+                    <p class="review-author">- Vanessa ridane</p>
+                </div>
+            </div>
+            <div class="review-controls text-center">
+                <button id="prevReview" class="control-btn"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextReview" class="control-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title text-center">Contactez-nous</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Résidence Lac 2001, Rue du Lac Léman,<br>Berges du Lac 1, Tunis, Tunisie</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p><a href="tel:+21652590052">+216 52 59 00 52</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/21655590905" target="_blank">+216 55 59 09 05</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:espacecosmetologie@gmail.com">espacecosmetologie@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horaires</h4>
+                            <p>Ouvert jusqu’à 19h</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links mt-4">
+                        <a href="https://www.instagram.com/soins_cosmeto_laser_mona_fazaa" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/EspaceCosmetologieEtSoinsAuLaserMonaFazaa" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- 
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Votre Nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Votre Téléphone" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Service souhaité</option>
+                                <option value="epilation">Épilation Laser</option>
+                                <option value="visage">Soin Visage</option>
+                                <option value="varices">Traitement Varices</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Votre Message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Envoyer le message</button>
+                    </form>
+                </div> 
+                -->
+            </div>
+
+            <div class="map-container mt-5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.651543883088!2d10.2335!3d36.8355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDUwJzA3LjgiTiAxMMKwMTQnMDAuNiJF!5e0!3m2!1sen!2stn!4v1620000000000!5m2!1sen!2stn"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h3>Mona Fazaa</h3>
+                <p>Excellence esthétique & technologie avancée</p>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">Accueil</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/soins_cosmeto_laser_mona_fazaa" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/EspaceCosmetologieEtSoinsAuLaserMonaFazaa" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Espace Cosmétologie & Soins au Laser Mona Fazaa. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/21655590905" class="float-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
