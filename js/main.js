@@ -1,5 +1,57 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // ── Translation Logic ──
+    const setLanguage = (lang) => {
+        document.documentElement.lang = lang;
+        localStorage.setItem('preferredLanguage', lang);
+
+        const elements = document.querySelectorAll('[data-i18n]');
+        elements.forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang] && translations[lang][key]) {
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.placeholder = translations[lang][key];
+                } else if (el.hasAttribute('placeholder')) {
+                    el.setAttribute('placeholder', translations[lang][key]);
+                } else {
+                    el.innerHTML = translations[lang][key];
+                }
+            }
+        });
+
+        // Update active state of language buttons
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            if (btn.getAttribute('data-lang') === lang) {
+                btn.classList.add('text-gold', 'font-bold');
+                btn.classList.remove('text-muted');
+            } else {
+                btn.classList.remove('text-gold', 'font-bold');
+                btn.classList.add('text-muted');
+            }
+        });
+
+        // Update document title and description
+        if (translations[lang].title) {
+            document.title = translations[lang].title;
+        }
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc && translations[lang].description) {
+            metaDesc.setAttribute('content', translations[lang].description);
+        }
+    };
+
+    // Language switcher initialization
+    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+    setLanguage(savedLang);
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const lang = btn.getAttribute('data-lang');
+            setLanguage(lang);
+        });
+    });
+
     // ── Header & Mobile Menu ──
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
