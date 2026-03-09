@@ -1,23 +1,62 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ── Translation Logic ──
+    // ── Auto-capture English text from HTML ──
+    // English is the "source of truth" in the HTML.
+    // On load, we save original English text so it can be restored later.
+    const originalEnglish = {};
+    const originalMeta = {
+        title: document.title,
+        description: document.querySelector('meta[name="description"]')?.getAttribute('content') || ''
+    };
+
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            originalEnglish[key] = el.placeholder;
+        } else if (el.hasAttribute('placeholder')) {
+            originalEnglish[key] = el.getAttribute('placeholder');
+        } else {
+            originalEnglish[key] = el.innerHTML;
+        }
+    });
+
+    // ── Set Language ──
     const setLanguage = (lang) => {
         document.documentElement.lang = lang;
         localStorage.setItem('preferredLanguage', lang);
 
-        const elements = document.querySelectorAll('[data-i18n]');
-        elements.forEach(el => {
+        document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
-            if (translations[lang] && translations[lang][key]) {
-                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-                    el.placeholder = translations[lang][key];
-                } else if (el.hasAttribute('placeholder')) {
-                    el.setAttribute('placeholder', translations[lang][key]);
-                } else {
-                    el.innerHTML = translations[lang][key];
-                }
+
+            // For English → use original HTML text
+            // For French  → use translations.js
+            const text = (lang === 'en')
+                ? originalEnglish[key]
+                : (translations.fr && translations.fr[key]) || originalEnglish[key];
+
+            if (!text) return;
+
+            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                el.placeholder = text;
+            } else if (el.hasAttribute('placeholder')) {
+                el.setAttribute('placeholder', text);
+            } else {
+                el.innerHTML = text;
             }
         });
+
+        // Update document title and meta description
+        if (lang === 'en') {
+            document.title = originalMeta.title;
+            const metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) metaDesc.setAttribute('content', originalMeta.description);
+        } else {
+            if (translations.fr.title) document.title = translations.fr.title;
+            const metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc && translations.fr.description) {
+                metaDesc.setAttribute('content', translations.fr.description);
+            }
+        }
 
         // Update active state of language buttons
         document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -29,15 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.classList.add('text-muted');
             }
         });
-
-        // Update document title and description
-        if (translations[lang].title) {
-            document.title = translations[lang].title;
-        }
-        const metaDesc = document.querySelector('meta[name="description"]');
-        if (metaDesc && translations[lang].description) {
-            metaDesc.setAttribute('content', translations[lang].description);
-        }
     };
 
     // Language switcher initialization
@@ -51,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setLanguage(lang);
         });
     });
+
 
     // ── Header & Mobile Menu ──
     const hamburger = document.getElementById('hamburger');
